@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom | Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">✈ TravelBloom</a>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <form class="search-box" id="searchForm">
+      <input type="search" id="searchInput"
+             placeholder="Search destinations..."
+             aria-label="Search destinations">
+      <button type="submit" class="btn btn-primary">Search</button>
+      <button type="button" id="resetBtn"
+              class="btn btn-reset">Reset</button>
+    </form>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+        <h1>EXPLORE<br>DREAM<br><span>DISCOVER.</span></h1>
+        <p>
+          Discover breathtaking beaches, ancient temples,
+          and unforgettable destinations around the world.
+          Find your next adventure with TravelBloom.
+        </p>
+        <a href="#recommendations" class="btn btn-primary explore-btn">
+          Explore Destinations
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank"
+           rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank"
+           rel="noopener noreferrer">Facebook</a>
+      </div>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+      <div class="section-heading">
+        <span class="eyebrow">CURATED FOR YOU</span>
+        <h2>Discover Your Next Destination</h2>
+        <p>
+          Search for beaches, temples, or countries to find
+          your perfect travel experience.
+        </p>
+      </div>
+
+      <div class="quick-search">
+        <button class="category-btn" data-search="beach">🏖 Beaches</button>
+        <button class="category-btn" data-search="temple">🏯 Temples</button>
+        <button class="category-btn" data-search="japan">🇯🇵 Japan</button>
+        <button class="category-btn" data-search="australia">🇦🇺 Australia</button>
+        <button class="category-btn" data-search="brazil">🇧🇷 Brazil</button>
+      </div>
+
+      <div id="searchStatus" class="search-status" aria-live="polite">
+        Explore our featured destinations below.
+      </div>
+
+      <div id="results" class="destination-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 TravelBloom. Discover the world with us.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
